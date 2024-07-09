@@ -1,14 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Information Form</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
     <form enctype="multipart/form-data" action="index.html" method="get">
-        <!-- FORM FIELDS HERE -->
+      <!-- FORM FIELDS HERE -->
+      <fieldset class="input-field">
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required />
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required />
+
+        <label for="date-of-month">Date of Birth:</label>
+        <input
+          type="date"
+          name="date"
+          id="date-of-month"
+          max="2024-07-08"
+          required
+        />
+      </fieldset>
+
+      <fieldset class="input-field">
+        <legend>Preferences</legend>
+        <label for="color">Favorite Color:</label>
+        <input class="color" type="color" name="color" id="color" />
+
+        <label for="hobby">Hobby:</label>
+        <input class="hobby" type="text" name="hobby" id="hobby" />
+
+        <label for="level-range">Experience Level:</label>
+        <input class="level" type="range" name="level" id="revel-range" min="1" max="10" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact Preferences</legend>
+        <label for="contact">Preferred Contact Methods:</label>
+        <select name="contact-method" id="contact">
+          <option value="email">Email</option>
+          <option value="phone">Phone</option>
+          <option value="fax">Fax</option>
+        </select>
+
+        <label for="newsletter">Surbscribe to Newsletter:</label>
+        <input type="checkbox" name="yes" id="newsletter" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label for="gender">Gender:</label>
+
+        <input type="radio" name="gender" id="male" checked />
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female" />
+        <label for="female">Female</label>
+
+        <input type="radio" name="gender" id="other" />
+        <label for="other">Other</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>More Information</legend>
+        <label for="bio">Bio:</label>
+        <textarea name="bio" id="bio" cols="60" rows="10"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Upload Documents</legend>
+        <label for="file">Resume and other certificates:</label>
+        <input type="file" name="file" id="file" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Submission</legend>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </fieldset>
     </form>
-</body>
+  </body>
 </html>
