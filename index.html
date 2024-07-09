@@ -9,7 +9,7 @@
   <body>
     <form enctype="multipart/form-data" action="index.html" method="get">
       <!-- FORM FIELDS HERE -->
-      <fieldset>
+      <fieldset class="input-field">
         <legend>Personal Information</legend>
         <label for="name">Name:</label>
         <input type="text" name="name" id="name" required />
@@ -30,16 +30,16 @@
         />
       </fieldset>
 
-      <fieldset>
+      <fieldset class="input-field">
         <legend>Preferences</legend>
         <label for="color">Favorite Color:</label>
-        <input type="color" name="color" id="color" />
+        <input class="color" type="color" name="color" id="color" />
 
         <label for="hobby">Hobby:</label>
-        <input type="text" name="hobby" id="hobby" />
+        <input class="hobby" type="text" name="hobby" id="hobby" />
 
         <label for="level-range">Experience Level:</label>
-        <input type="range" name="level" id="revel-range" min="1" max="10" />
+        <input class="level" type="range" name="level" id="revel-range" min="1" max="10" />
       </fieldset>
 
       <fieldset>
